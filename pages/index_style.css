@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Dovemayo_gothic";
+}
+
+/* 폰트 적용 */
+@font-face {
+  font-family: "Dovemayo_gothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 토글 버튼 */
+
+label {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+[type="checkbox"] {
+  appearance: none;
+  cursor: pointer;
+}
+[type="checkbox"] {
+  appearance: none;
+  position: relative;
+  border: max(2px, 0.1em) solid gray;
+  border-radius: 2em;
+  width: 6.25em;
+  height: 3.25em;
+}
+[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  transform: scale(0.8);
+  background-color: gray;
+  transition: left 300ms linear;
+}
+[type="checkbox"]:checked::before {
+  background-color: white;
+  left: 3em;
+}
+
+[type="checkbox"]:checked {
+  background-color: rgb(185, 243, 228);
+  border-color: rgb(185, 243, 228);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 75px;
+}
+
+.toggle-button {
+  text-align: center;
+  margin-top: 130px;
+}
+
+nav {
+  text-align: center;
+}
+
+#button {
+  font-family: "Dovemayo_gothic";
+  width: 400px;
+  height: 200px;
+  font-size: 40px;
+  border-radius: 20px;
+  border: none;
+}
+
+#button:hover {
+  cursor: pointer;
+}
+
+.page_button {
+  margin-top: 140px;
+}
+
+.list_page {
+  background-color: rgb(234, 143, 234);
+}
+.list_page:active {
+  background-color: #dc88dc;
+}
+.data_page {
+  background-color: rgb(255, 170, 207);
+}
+.data_page:active {
+  background-color: #ea9dbe;
+}
+.setting_page {
+  background-color: rgb(246, 230, 194);
+}
+.setting_page:active {
+  background-color: #e2d4b4;
+}

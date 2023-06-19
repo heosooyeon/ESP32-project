@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Dovemayo_gothic";
+}
+
+/* 폰트 적용 */
+@font-face {
+  font-family: "Dovemayo_gothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 65px;
+}
+
+.number {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.okay {
+  font-family: "Dovemayo_gothic";
+  margin-top: 35px;
+  width: 90px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ff55bb;
+}
+
+.okay:hover {
+  cursor: pointer;
+}
+
+.okay:active {
+  background-color: #eb51ae;
+}
+
+.table {
+  font-family: "Dovemayo_gothic";
+  width: 700px;
+  margin: auto;
+  border-collapse: separate;
+  border: none;
+  border-spacing: 0;
+}
+
+th,
+td {
+  padding: 6px 15px;
+}
+
+th {
+  background: #93c6e7;
+  color: #fff;
+}
+
+tr:first-child th:first-child {
+  border-top-left-radius: 6px;
+}
+tr:first-child th:last-child {
+  border-top-right-radius: 6px;
+}
+td {
+  border-right: 1px solid #c6c9cc;
+  border-bottom: 1px solid #c6c9cc;
+}
+td:first-child {
+  border-left: 1px solid #c6c9cc;
+}
+tr:nth-child(even) td {
+  background: #eaeaed;
+}
+tr:last-child td:first-child {
+  border-bottom-left-radius: 6px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 6px;
+}
+
+.delete_btn {
+  font-family: "Dovemayo_gothic";
+  width: 90px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #6554af;
+}
+
+.delete_btn:hover {
+  cursor: pointer;
+}
+
+.delete_btn:active {
+  background-color: #6554af;
+}

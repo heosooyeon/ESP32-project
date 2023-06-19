@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Dovemayo_gothic";
+}
+
+/* 폰트 적용 */
+@font-face {
+  font-family: "Dovemayo_gothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 65px;
+}
+
+.chart {
+  width: 50px;
+  height: 50px;
+}
